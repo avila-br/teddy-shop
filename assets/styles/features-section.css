@@ -1,0 +1,88 @@
+/* Features Section */
+.ts-features-section {
+    padding: 60px 0;
+    background-color: #E1EDE9;
+    position: relative;
+}
+
+.ts-features-main-title {
+    text-align: center;
+    font-size: 2.2rem;
+    color: var(--ts-secondary-color);
+    margin-bottom: 40px;
+    font-weight: 600;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.ts-features-main-title::before,
+.ts-features-main-title::after {
+    content: "🌸";
+    font-size: 1.8rem;
+}
+
+.ts-features-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.ts-feature-item {
+    flex: 1;
+    background-color: var(--ts-card-bg);
+    border-radius: var(--ts-border-radius);
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: var(--ts-box-shadow);
+    border: 1px solid #e0e0e0;
+    border: 3px solid #C9B079;
+    transition: transform 0.3s ease;
+}
+
+.ts-feature-item:hover {
+    transform: translateY(-5px);
+}
+
+.ts-feature-icon {
+    font-size: 2rem;
+    color: var(--ts-secondary-color);
+    margin-bottom: 15px;
+}
+
+.ts-feature-item-title {
+    font-size: 1.2rem;
+    color: var(--ts-secondary-color);
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.ts-feature-item-desc {
+    font-size: 0.9rem;
+    color: var(--ts-text-color);
+    line-height: 1.5;
+}
+
+.ts-pagination-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 30px;
+}
+
+.ts-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.ts-dot-active {
+    background-color: var(--ts-accent-color);
+}

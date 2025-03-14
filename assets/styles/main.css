@@ -1,0 +1,128 @@
+@import url("base.css");
+@import url("header.css");
+@import url("categories-section.css");
+@import url("spring-section.css");
+@import url("features-section.css");
+@import url("special-section.css");
+@import url("popular-section.css");
+@import url("testimonials-section.css");
+@import url("footer.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    background-color: var(--secondary-color);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition);
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 500;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn-primary:hover {
+    background-color: #4ab9af;
+    transform: translateY(-2px);
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    padding: 5px;
+    transition: var(--transition);
+}
+
+.icon-btn:hover {
+    color: var(--primary-color);
+}
+
+/* Notification bar */
+.notification-bar {
+    background-color: #F8E8D8;
+    padding: 10px 0;
+    font-size: 0.85rem;
+}
+
+.notification-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notification-item {
+    text-align: center;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    margin-right: 10px;
+}
+
+@media (max-width: 1200px) {
+    .logo-title {
+        display: none;
+    }
+}
+
+/* Intro section */
+.intro-section {
+    text-align: center;
+    padding: 60px 0 30px;
+}
+
+.main-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.intro-text {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: var(--light-text);
+}

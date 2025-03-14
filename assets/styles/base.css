@@ -1,0 +1,19 @@
+/* Base styles and reset */
+:root {
+    --primary-color: #5ECBC1;
+    --secondary-color: #F8F5F1;
+    --text-color: #333333;
+    --light-text: #777777;
+    --border-color: #E5E5E5;
+    --white: #FFFFFF;
+    --shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    --transition: all 0.3s ease;
+    --ts-primary-color: #f8d7da;
+    --ts-secondary-color: #5a4a42;
+    --ts-accent-color: #f8a5a1;
+    --ts-text-color: #333;
+    --ts-light-bg: #f5f5f5;
+    --ts-card-bg: #fff;
+    --ts-border-radius: 12px;
+    --ts-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}

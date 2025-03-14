@@ -1,0 +1,276 @@
+/* Header styles */
+.header {
+    font-family: "Poppins", sans-serif;
+}
+
+/* Notification bar */
+.notification-bar {
+    background-color: #f8e8d8;
+    padding: 8px 0;
+    font-size: 0.85rem;
+}
+
+.notification-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.notification-item {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.notification-item:hover {
+    color: #333;
+}
+
+/* Main header */
+.main-header {
+    background-color: white;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+/* Navigation */
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-list a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.nav-list a:hover,
+.nav-list a.active {
+    color: #5ecbc1;
+}
+
+.has-dropdown {
+    position: relative;
+}
+
+.chevron-down {
+    transition: transform 0.3s ease;
+}
+
+.has-dropdown:hover .chevron-down {
+    transform: rotate(180deg);
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    min-width: 200px;
+    padding: 10px 0;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+}
+
+.has-dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu a {
+    padding: 8px 16px;
+    display: block;
+}
+
+/* Header actions */
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    color: #333;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-btn:hover {
+    color: #5ecbc1;
+}
+
+.btn-primary {
+    background-color: #5ecbc1;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #4bb5ac;
+}
+
+/* Mobile menu toggle */
+.mobile-menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.mobile-menu-toggle span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    position: absolute;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.mobile-menu-toggle span:nth-child(1) {
+    top: 0;
+}
+
+.mobile-menu-toggle span:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.mobile-menu-toggle span:nth-child(3) {
+    bottom: 0;
+}
+
+/* Promo banner */
+.promo-banner {
+    background-color: #f8e8d8;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.promo-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.promo-text {
+    font-weight: 500;
+    color: #333;
+}
+
+.promo-highlight {
+    background-color: #c27c54;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-weight: 500;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+    .nav-list {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 960px) {
+    .main-nav {
+        display: none;
+    }
+
+    .header-actions,
+    .header-actions .btn-primary {
+        display: none;
+    }
+
+    .notification-bar {
+        display: none;
+    }
+}
+
+/* Mobile menu active state */
+@media (max-width: 960px) {
+    .main-nav.active {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        padding: 80px 20px 20px;
+        z-index: 100;
+    }
+
+    .main-nav.active .nav-list {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .main-nav.active .dropdown-menu {
+        position: static;
+        box-shadow: none;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 960px) {
+    .mobile-menu-toggle {
+        display: block;
+    }
+
+    .notification-content {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .promo-content {
+        flex-direction: column;
+    }
+}
