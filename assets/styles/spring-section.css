@@ -123,18 +123,26 @@
 
 .btn-explore {
     display: inline-block;
-    background-color: #c27c54;
+    background-color: #BF8B70;
     color: white;
-    padding: 12px 30px;
+    padding: 16px 50px;
     border-radius: 30px;
-    font-weight: 500;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    border: 3px solid #C9B079;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+    border: 3px solid white;
+    box-shadow: 0px 6px 0px #00000059, 0px 10px 15px rgba(0, 0, 0, 0.3);
 }
 
 .btn-explore:hover {
-    background-color: #b06b43;
-    transform: translateY(-2px);
+    background-color: #be805b;
+    transform: translateY(-3px);
+    box-shadow: 0px 4px 0px #00000059, 0px 12px 18px rgba(0, 0, 0, 0.35);
+}
+
+.btn-explore:active {
+    transform: translateY(2px);
+    box-shadow: 0px 2px 0px #00000059, 0px 6px 10px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 960px) {

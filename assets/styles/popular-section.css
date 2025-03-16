@@ -1,12 +1,17 @@
 /* Popular Products Section */
 .ts-popular-section {
     padding: 60px 0;
-    background-color: f7f2ec;
+    background-color: #f7f2ec;
 }
 
 .ts-popular-header {
     text-align: center;
     margin-bottom: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    white-space: nowrap;
 }
 
 .ts-popular-title-wrapper {
@@ -93,22 +98,6 @@
 .ts-popular-action {
     text-align: center;
     margin-top: 20px;
-}
-
-.ts-btn-explore {
-    display: inline-block;
-    background-color: var(--ts-secondary-color);
-    color: white;
-    padding: 12px 30px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: background-color 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.ts-btn-explore:hover {
-    background-color: #4a3a32;
 }
 
 /* Responsive Styles */
